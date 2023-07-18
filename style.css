@@ -30,6 +30,22 @@ body {
     margin: 0 auto;
 }
 
+.section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-description {
+    color: #534C64;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 30px;
+}
+
 /* Header style start */
 
 /* nav style */
@@ -123,6 +139,10 @@ nav {
 
 .primary-btn {
     background-color: var(--primary-color);
+
+}
+
+.banner-button .primary-btn {
     margin-right: 24px;
 }
 
@@ -143,13 +163,58 @@ nav {
 
 .banner-image {
     text-align: center;
-}
-
-.banner-image img {
-    width: 100%;
+    padding-right: 240px;
 }
 
 /* Header style end */
+/* Main style start */
+
+/* we are gamer section style start */
+
+.gamer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 50px 240px;
+}
+
+.gamer-content {
+    direction: rtl;
+}
+
+.gamer-content .section-title,
+.gamer-content .primary-btn {
+    margin-bottom: 24px;
+}
+
+.gamer-content .section-description {
+    margin-bottom: 32px;
+}
+
+.gamer-ellipsis-content {
+    direction: ltr;
+    width: 170px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #534C64;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 45px;
+}
+
+.gamer-quotation {
+    color: #534C64;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+
+/* we are gamer section style end */
+
+/* Main style end */
 
 
 
@@ -183,28 +248,54 @@ nav {
         padding: 100px 30px;
     }
 
-    .banner-title, .banner-subtitle{
+    .banner-image img {
+        width: 100%;
+    }
+
+    .banner-title,
+    .banner-subtitle {
         text-align: center;
     }
 
     .banner-image {
         padding: 30px;
     }
-    .banner-button{
+
+    .banner-button {
         text-align: center;
     }
+
     .primary-btn,
-.secondary-btn {
-    padding: 20px 40px;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 600;
-    border: transparent;
-    border-radius: 48px;
-}
-.primary-btn {
-    margin-right: 10px;
-}
+    .secondary-btn {
+        padding: 20px 40px;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 600;
+        border: transparent;
+        border-radius: 48px;
+    }
+
+    .banner-button .primary-btn {
+        margin-right: 10px;
+    }
+
+    /* gamer section */
+    .gamer-container {
+        flex-direction: column;
+        padding: 100px 30px;
+    }
+
+    .gamer-image img {
+        width: 100%;
+    }
+
+    .gamer-content {
+        text-align: center;
+    }
+
+    .gamer-ellipsis-content {
+        margin: 0 auto;
+    }
 }
 
 /* Small device end*/
@@ -217,6 +308,95 @@ nav {
         flex-direction: column;
         padding: 20px;
     }
+
+    .banner-image img {
+        width: 100%;
+    }
+
+    .banner {
+        grid-template-columns: 100%;
+    }
+
+    .banner-content {
+        order: 2;
+    }
+
+    .banner-content {
+        padding: 100px 50px;
+    }
+
+    .banner-image img {
+        width: 100%;
+    }
+
+    .banner-image {
+        padding: 30px;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        padding: 20px 40px;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 600;
+        border: transparent;
+        border-radius: 48px;
+    }
+
+    .primary-btn {
+        margin-right: 10px;
+    }
+
+    /* gamer section */
+    .gamer-container {
+        flex-direction: column;
+        padding: 100px 30px;
+    }
+
+    .gamer-image img {
+        width: 100%;
+    }
+
+    .gamer-content {
+        direction: ltr;
+        text-align: left;
+    }
+
+    .gamer-ellipsis-content {
+        direction: ltr;
+    }
 }
 
+
 /* Medium device end */
+/* Large device start */
+@media screen and (min-width:993px) and (max-width:1740px) {
+    nav {
+        padding: 50px;
+    }
+
+    .banner-image img {
+        width: 100%;
+    }
+    .banner-image {
+        text-align: center;
+        padding-right: 50px;
+    }
+
+    .banner-content {
+        padding: 100px 50px;
+    }
+        /* gamer section */
+        .gamer-container {
+            padding: 100px 50px;
+        }
+    
+        .gamer-image img{
+            max-width: 55vw;
+        }
+        .gamer-ellipsis-content {
+            direction: ltr;
+        }
+}
+
+/* large device end */
