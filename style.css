@@ -66,6 +66,7 @@ body {
     color: #0b0223;
 }
 
+
 /* Header style start */
 
 /* nav style */
@@ -154,18 +155,18 @@ nav {
 
 .banner-list i {
     font-size: 1.5rem;
-    color: var(--primary-color);
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-
+.banner-button .primary-btn {
+    margin-right: 24px;
+}
 .primary-btn {
     background-color: var(--primary-color);
 
 }
-
-.banner-button .primary-btn {
-    margin-right: 24px;
-}
-
 .secondary-btn {
     background-color: var(--secondary-color);
 }
@@ -176,9 +177,20 @@ nav {
     color: #fff;
     font-size: 1.25rem;
     font-weight: 600;
-    border: transparent;
+    border: 2px solid transparent;
     border-radius: 48px;
-
+}
+.primary-btn:hover{
+    cursor: pointer;
+    color: var(--primary-color);
+    background-color: #fff;
+    border: 2px solid var(--primary-color);
+}
+.secondary-btn:hover{
+    cursor: pointer;
+    color: var(--secondary-color);
+    background-color: #fff;
+    border: 2px solid var(--secondary-color);
 }
 
 .banner-image {
@@ -421,6 +433,7 @@ nav {
 }
 
 .footer-menu li:hover {
+    cursor: pointer;
     color: var(--secondary-color);
 }
 
@@ -436,6 +449,10 @@ nav {
 .agreement-container {
     color: #ffffff99;
     margin: 74px 0 30px;
+}
+.agreement-container li:hover{
+    color: #fff;
+    cursor: pointer;
 }
 
 .copywrite-text {
