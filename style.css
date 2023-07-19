@@ -331,7 +331,56 @@ nav {
 /* Game category style end */
 /* Main style end */
 
+/* Footer style start */
+.footer-container{
+    padding: 100px 240px;
+    background-color:#0B0223 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.footer-logo{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.footer-logo .logo-text{   
+    color: #fff;
+}
+.footer-menu, .agreement-container{
+    display: flex;
+    gap: 60px;
+    list-style-type: none;
+    white-space: nowrap;
+}
+.footer-menu{
+    color: #fff;
+    margin: 55px 0px;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+.footer-menu li:hover{
+    color: var(--secondary-color);
+}
+.footer-icon{
+    font-size: 2.5rem;
+    margin: 0 20px;
+    color: white;
+}
+.footer-icon:hover{
+    color: var(--primary-color);
+}
+.agreement-container{
+    color: #ffffff99;
+    margin: 74px 0 30px;
+}
+.copywrite-text{
+    color: #ffffff99;
+}
 
+
+/* Footer style end */
 
 
 
@@ -635,7 +684,7 @@ nav {
 
     .play-instant-big-img {
         margin-left: 0px;
-        padding-left: 10px;
+        padding-left: 100px;
         width: 100%;
     }
 
