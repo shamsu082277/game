@@ -274,6 +274,10 @@ nav {
 
 .card-hover {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     top: 0;
     left: 0;
     width: 100%;
@@ -282,10 +286,6 @@ nav {
     border:5px solid var(--primary-color);
     cursor: pointer;
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
