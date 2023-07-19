@@ -589,7 +589,21 @@ nav {
 
     /* game category */
     .game-category {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 8px;
         padding: 50px 30px;
+    }
+    .gametag{
+        padding: 5px 15px 5px 5px;
+        gap: 5px;
+    }
+    .gametag img{
+        width:10%;
+        height: auto;
+    }
+    .gametag .category-title {
+    font-size: 10px;
     }
 
     /* Footer style */
@@ -734,7 +748,7 @@ nav {
 /* Large device start */
 @media screen and (min-width:993px) and (max-width:1740px) {
     nav {
-        padding: 50px 100px;
+        padding: 25px 50px;
     }
 
     .banner-image img {
