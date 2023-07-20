@@ -589,21 +589,19 @@ nav {
 
     /* game category */
     .game-category {
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
         gap: 8px;
         padding: 50px 30px;
     }
     .gametag{
-        padding: 5px 15px 5px 5px;
+        padding: 5px 8px 5px 5px;
         gap: 5px;
     }
     .gametag img{
-        width:10%;
+        width:15px;
         height: auto;
     }
     .gametag .category-title {
-    font-size: 10px;
+    font-size: 0.5rem;
     }
 
     /* Footer style */
@@ -727,7 +725,19 @@ nav {
 
     /* game category */
     .game-category {
+        gap: 12px;
         padding: 50px 50px;
+    }
+    .gametag{
+        padding: 8px 12px 8px 8px;
+        gap: 8px;
+    }
+    .gametag img{
+        width:25px;
+        height: auto;
+    }
+    .gametag .category-title {
+    font-size: 0.75rem;
     }
 
     /* Footer style */
