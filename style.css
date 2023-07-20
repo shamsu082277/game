@@ -125,6 +125,7 @@ nav {
 .banner-content {
     padding: 150px 300px 150px 240px;
     background-image: url(./images/Group\ 14.png);
+    background-position: right center;
     background-repeat: no-repeat;
     background-size: cover;
 }
